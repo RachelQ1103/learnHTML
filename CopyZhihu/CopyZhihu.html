@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="一个装逼的网络问答社区，提升你的逼格。">
+    <title>知乎 - 装更大的逼</title>
+    <style>
+        #container{
+            background-color: rgba(229, 229, 222, 0.62);
+        }
+        #main-body{
+            width: 300px;
+            height: 510px;
+            margin: auto;
+            padding: 40px 0;
+        }
+        #header{
+            width: 300px;
+            height: 122px;
+            margin: auto;
+        }
+        #logo{
+            margin: 0 auto;
+            width: 160px;
+            height: 74px;
+            background-image: url(./zhihu/logo@2x.bf092086.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: block;
+        }
+        #subtitle{
+            width: 300px;
+            height: 18px;
+            margin: 30px auto;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1;
+            text-align: center;
+            color: #555;
+            font-family: 'Helvetica Neue','Helvetica','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Arial',sans-serif;
+
+        }
+        #nav{
+            width: 144px;
+            height: 35px;
+            margin: 10px auto;
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.7;
+            font-family: 'Helvetica Neue','Helvetica','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Arial',sans-serif;
+            font-size: 100%;
+
+        }
+        #nav a{
+            width: 72px;
+            height: 35px;
+            float:left;
+            color: #6d6e6d;
+            line-height: 35px;
+            opacity: .7;
+            margin: 15px auto 0;
+            text-align: center;
+            text-decoration: none;
+        }
+        #nav a:hover{
+            color: black;
+        }
+        .nav-slider-bar{
+            width: 43px;
+            height: 2px;
+            background: #4a80b1;
+            margin: 13px;
+            overflow:hidden;
+        }
+        #form{
+            margin: 36px auto;
+            width: 300px;
+            height: 296px;
+        }
+        #sign-login{
+            width: 298px;
+            height: 191.4px;
+            background: white;
+            padding: 1px 0;
+            border: 1px solid #d5d5d5;
+            border-radius: 3px;
+        }
+        .SignLoginForm{
+            margin: 0px auto;
+            width: 298px;
+            text-align: left;
+            line-height: 1.7;
+            overflow: hidden;
+        }
+        .input-wrapper{
+            padding: 14px 11.2px;
+            width: 100%;
+            height: 19px;
+            line-height: 19px;
+            border-bottom: 1px solid #f2f2f2;
+            font-family: 'Helvetica Neue', 'Helvetica', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Arial', sans-serif;
+            color: #555555;
+            display: inline-block;
+            text-align: start;
+            cursor: text;
+        }
+        input{
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+        .button-wrapper{
+            width: 100%;
+            height: 41px;
+            margin: 18px auto 15px;
+            background: rgba(70, 159, 246, 0.86);
+            border-radius: 3px;
+            line-height: 41px;
+            text-align: center;
+            font-size: 17px;
+            font-family: 'Helvetica Neue', 'Helvetica', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Arial', sans-serif;
+            color: white;
+        }
+        #LoginByAccount a{
+            text-align: left;
+            font-size: 14px;
+            font-family: 'Helvetica Neue', 'Helvetica', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Arial', sans-serif;
+            color: gray;
+            text-decoration: none;
+        }
+        #LoginByAccount a:hover{
+            color: #424242;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="main-body">
+            <div id="header">
+                <h1 id="logo"></h1>
+                <h2 id="subtitle">与世界分享你的装逼技巧</h2>
+            </div>
+            <div id="nav">
+                <a href="#sign-up">注册</a>
+                <a href="#log-in">登录</a>
+                <div class="nav-slider-bar"></div>
+            </div>
+            <div id="form">
+                <form id="sign-login">
+                    <div class="SignLoginForm">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="姓名" name="username"/>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="手机号或邮箱" name="contact"/>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="密码 (不少于6位)" name="password"/>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="验证码" name="username"/>
+                        </div>
+                        <div class="button-wrapper">注册知乎</div>
+                        <div id="LoginByAccount">
+                            <a href="#SocialAccount">社交账号登录</a>
+                        </div>
+                    </div>
+                    <div class="SignLoginForm"></div>
+
+                </form>
+            </div>
+
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
